@@ -11,8 +11,8 @@ Integrating with Conky
 I use the following command to embed the output of this script into my `conky`
 output:
 
-```
-lua ${voffset 8}${execi 600 /path/to/random-man-command.rb | fmt -s -w 40 }
+```lua
+${voffset 8}${execi 600 /path/to/random-man-command.rb | fmt -s -w 40 }
 ```
 
 The `fmt` command (into which I am piping the output) hard-wraps the output of
