@@ -8,8 +8,8 @@ the same.
 
 Integrating with Conky
 ----------------------
-I use the following command to embed the output of this script into my `conky`
-output:
+I use the following command (in my `.conkyrc`) to embed the output of this
+script into `conky`:
 
 ```lua
 ${voffset 8}${execi 600 /path/to/random-man-command.rb | fmt -s -w 40 }
