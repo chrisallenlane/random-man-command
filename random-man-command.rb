@@ -22,4 +22,5 @@ while man_content.empty?
 end
 
 # display the first 509 characters
-puts man_content[0..509] + '...'
+#puts man_content[0..509] + '...'
+puts man_content
