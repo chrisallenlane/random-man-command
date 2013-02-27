@@ -14,7 +14,7 @@ script's output within `conky`:
 ${voffset 8}${execi 600 /path/to/random-man-command.rb }
 ```
 You may alternatively use the `fmt` command to wrap this script's output to an
-arbitrary length (ex: 40) so that it stays visible within `conky`'s bounds:
+arbitrary length (ex: 40 chars) so that it stays visible within `conky`'s bounds:
 
 ```lua
 ${voffset 8}${execi 600 /path/to/random-man-command.rb | fmt -w 40 }
