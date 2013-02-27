@@ -15,7 +15,7 @@ end
 man_content = ''
 while man_content.empty?
     # randomly select one of the programs from the array of executables
-    program = File.basename executables[Random.rand(executables.length - 1)]
+    program = File.basename executables[rand(executables.length - 1)]
 
     # buffer its manpage content
     man_content = `man #{program}`
