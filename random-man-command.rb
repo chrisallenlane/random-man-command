@@ -18,9 +18,8 @@ while man_content.empty?
     program = File.basename executables[Random.rand(executables.length - 1)]
 
     # buffer its manpage content
-    man_content = `man #{program}`.gsub(/[\n]+/, "\n");
+    man_content = `man #{program}`
 end
 
-# display the first 509 characters
-#puts man_content[0..509] + '...'
+# display the output
 puts man_content
